@@ -1,4 +1,4 @@
-package Views.BookViews;
+package Views.StudentViews;
 
 import FrameWork.ViewBase;
 import FrameWork.ViewHelp;

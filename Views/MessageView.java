@@ -4,7 +4,6 @@ import FrameWork.Message;
 import FrameWork.ViewHelp;
 import FrameWork.Router;
 import FrameWork.ViewBaseG;
-import FrameWork.EMessageType;
 
 public class MessageView extends ViewBaseG<Message>
 {

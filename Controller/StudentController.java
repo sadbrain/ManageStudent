@@ -5,7 +5,7 @@ import FrameWork.ControllerBase;
 import FrameWork.Router;
 import FrameWork.ViewHelp;
 import Models.Student;
-import Views.BookViews.*;
+import Views.StudentViews.*;
 
 public class StudentController extends ControllerBase{
     protected StudentRepository studentRepository;

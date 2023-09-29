@@ -16,9 +16,9 @@ public class StudentRepository {
     public Student[] select() {return context.getStudents().toArray(new Student[context.getStudents().size()]);}
 
     public Student select(int id){
-        for (Student b : context.getStudents()) {
-            if(b.getId() == id){
-                return b;
+        for (Student s : context.getStudents()) {
+            if(s.getId() == id){
+                return s;
             }
         }
         return null;
@@ -62,18 +62,18 @@ public class StudentRepository {
 
     }
     public boolean update(int id, Student student){
-        Student b = select(id);
-        if(b == null) return false;
-        b.setName(student.getName());
-        b.setCourse(student.getCourse());
-        b.setSemester(student.getSemester());
+        Student s = select(id);
+        if(s == null) return false;
+        s.setName(student.getName());
+        s.setCourse(student.getCourse());
+        s.setSemester(student.getSemester());
         return true;
     }
     public boolean delete(int id)
     {
-        Student b = select(id);
-        if (b == null) return false;
-        context.getStudents().remove(b);
+        Student s = select(id);
+        if (s == null) return false;
+        context.getStudents().remove(s);
         return true;
     } 
 

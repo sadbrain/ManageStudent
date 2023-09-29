@@ -7,15 +7,15 @@ public class Program {
 
         ProgramHelp.configue();
         while(true){
-            rootMenu();;
+            rootMenu();
 
         }
     
     }
-    private static void rootMenu(){
+    public static void rootMenu(){
         ViewHelp.WriteLine("---------------------------------LibreryMan----------------------------------", ViewHelp.TEXT_YELLOW);            
         ViewHelp.WriteLine(String.format("| %-73s |","1. Create"), ViewHelp.TEXT_BLUE); 
-        ViewHelp.WriteLine(String.format("| %-73s |","2. sing student"), ViewHelp.TEXT_BLUE); 
+        ViewHelp.WriteLine(String.format("| %-73s |","2. single student"), ViewHelp.TEXT_BLUE); 
         ViewHelp.WriteLine(String.format("| %-73s |","3. list student"), ViewHelp.TEXT_BLUE); 
         ViewHelp.WriteLine(String.format("| %-73s |","4. Find and sort"), ViewHelp.TEXT_BLUE); 
         ViewHelp.WriteLine(String.format("| %-73s |","5. Update"), ViewHelp.TEXT_BLUE); 
